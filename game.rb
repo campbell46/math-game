@@ -9,7 +9,7 @@
 
 class Game 
   attr_accessor :player1, :player2
-  @@turns = 0
+  @@round = 0
 
   def initialize
     @player1 = Player.new("Player 1", "P1")
@@ -19,8 +19,8 @@ class Game
 
   def start_game
     while player1.lives > 0 && player2.lives > 0
-      @@turns += 1
-      current_player = @@turns.odd? ? player1 : player2
+      @@round += 1
+      current_player = @@round.odd? ? player1 : player2
       round = Round.new(current_player)
       round.new_round
       
