@@ -1,3 +1,12 @@
+# Game class that initializes 2 players and starts the game
+# Current player is decided based on turn number being odd or even
+# As long as both players lives are more than 0 start a new round
+#### Round done
+# Log the player scores after each round
+# If current player still has lives start a new round
+# Otherwise winner is not the current player
+# Log winner info, game over, goodbye
+
 class Game 
   attr_accessor :player1, :player2
   @@turns = 0

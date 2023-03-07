@@ -1,3 +1,6 @@
+# Player class keeps state of players name, short name and lives(3 to begin)
+# Lose life method removes a life if question was answered incorrect
+
 class Player
   attr_accessor :lives
   attr_reader :name, :short_name
